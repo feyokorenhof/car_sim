@@ -53,14 +53,14 @@ class CarGame3D : public Game
         // Gray road
         DrawPlane({0.0f, -0.05f, carZ + 20.0f}, {12.0f, 200.0f}, DARKGRAY);
 
-        // Temporary car model: a simple box.
+        // Temporary car model
         DrawCube({0.0f, 0.5f, carZ}, 2.0f, 1.0f, 4.0f, RED);
 
         DrawCubeWires({0.0f, 0.5f, carZ}, 2.0f, 1.0f, 4.0f, MAROON);
 
         EndMode3D();
 
-        // HUD.
+        // HUD
         DrawText(car.GetName().c_str(), 20, 20, 28, WHITE);
         DrawText(TextFormat("Speed: %.1f km/h", car.GetVelocityKmH()), 20, 60,
                  24, WHITE);
@@ -83,7 +83,6 @@ class CarGame3D : public Game
 
     void Update(float deltaTime) override
     {
-        // Input: W accelerates, S brakes.
         car.SetThrottle(IsKeyDown(KEY_W) ? 1.0f : 0.0f);
         car.SetBrake(IsKeyDown(KEY_S) ? 1.0f : 0.0f);
 
@@ -96,11 +95,10 @@ class CarGame3D : public Game
         if (WindowShouldClose() || IsKeyPressed(KEY_ESCAPE))
             Stop();
 
-        // Velocity is in m/s; FIXED_DT is physics timestep
         if (roadOffset >= dashSpacing)
             roadOffset -= dashSpacing;
 
-        // Follow the car from behind.
+        // Follow the car from behind
         camera.position = {0.0f, 4.0f, carZ - 8.0f};
         camera.target = {0.0f, 0.5f, carZ + 3.0f};
     }
