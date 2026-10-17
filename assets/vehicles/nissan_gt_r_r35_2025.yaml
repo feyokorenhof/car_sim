@@ -1,0 +1,40 @@
+vehicle:
+  name: "Nissan GT-R R35 (2025)"
+  mass: 1785.0
+  drag: 0.26
+  frontal_area: 2.20
+  rolling_resistance: 0.012
+
+engine:
+  peak_torque: 637.0
+  rpm_limit: 7000.0
+  torque_curve:
+    - rpm: 2000
+      torque: 560.0
+    - rpm: 3000
+      torque: 620.0
+    - rpm: 3600
+      torque: 637.0
+    - rpm: 4500
+      torque: 637.0
+    - rpm: 5500
+      torque: 610.0
+    - rpm: 6500
+      torque: 540.0
+    - rpm: 7000
+      torque: 450.0
+
+transmission:
+  final_drive: 3.70
+  gear_efficiency: 0.90
+  gear_ratios:
+    - 4.06
+    - 2.30
+    - 1.60
+    - 1.19
+    - 1.00
+    - 0.86
+
+wheels:
+  wheel_radius: 0.34
+  max_braking_force: 14000.0

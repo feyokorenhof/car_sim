@@ -1,0 +1,3 @@
+/Users/feyo/Code/cpp/test/CMakeFiles/MyApp.dir
+/Users/feyo/Code/cpp/test/CMakeFiles/edit_cache.dir
+/Users/feyo/Code/cpp/test/CMakeFiles/rebuild_cache.dir

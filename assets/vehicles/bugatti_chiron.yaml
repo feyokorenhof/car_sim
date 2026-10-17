@@ -1,0 +1,41 @@
+vehicle:
+  name: "Bugatti Chiron"
+  mass: 1995.0
+  drag: 0.35
+  frontal_area: 2.10
+  rolling_resistance: 0.013
+
+engine:
+  peak_torque: 1600.0
+  rpm_limit: 6700.0
+  torque_curve:
+    - rpm: 1500
+      torque: 1200.0
+    - rpm: 2000
+      torque: 1450.0
+    - rpm: 3000
+      torque: 1600.0
+    - rpm: 4500
+      torque: 1600.0
+    - rpm: 5500
+      torque: 1500.0
+    - rpm: 6200
+      torque: 1350.0
+    - rpm: 6700
+      torque: 1100.0
+
+transmission:
+  final_drive: 3.20
+  gear_efficiency: 0.92
+  gear_ratios:
+    - 3.20
+    - 2.09
+    - 1.48
+    - 1.09
+    - 0.88
+    - 0.72
+    - 0.59
+
+wheels:
+  wheel_radius: 0.36
+  max_braking_force: 60000.0

@@ -1,0 +1,35 @@
+vehicle:
+  name: "Ford Fiesta 2007 1.25i"
+  mass: 1050.0
+  drag: 0.36
+  frontal_area: 1.95
+  rolling_resistance: 0.013
+
+engine:
+  peak_torque: 114.0
+  rpm_limit: 6000.0
+  torque_curve:
+    - rpm: 1000
+      torque: 95.0
+    - rpm: 2000
+      torque: 108.0
+    - rpm: 3000
+      torque: 114.0
+    - rpm: 4500
+      torque: 110.0
+    - rpm: 6000
+      torque: 92.0
+
+transmission:
+  final_drive: 4.25
+  gear_efficiency: 0.90
+  gear_ratios:
+    - 3.58
+    - 1.93
+    - 1.28
+    - 0.95
+    - 0.76
+
+wheels:
+  wheel_radius: 0.29
+  max_braking_force: 8000.0

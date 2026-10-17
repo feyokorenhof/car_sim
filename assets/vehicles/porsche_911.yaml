@@ -1,0 +1,42 @@
+vehicle:
+  name: "Porsche 911"
+  mass: 1500.0
+  drag: 0.29
+  frontal_area: 1.85
+  rolling_resistance: 0.012
+
+engine:
+  peak_torque: 550.0
+  rpm_limit: 6500.0
+
+  torque_curve:
+    - rpm: 1000
+      torque: 580
+    - rpm: 2000
+      torque: 650 
+    - rpm: 4000
+      torque: 750
+    - rpm: 6000
+      torque: 680
+    - rpm: 7400
+      torque: 500
+
+transmission:
+  final_drive: 3.44
+  gear_efficiency: 0.9
+
+  gear_ratios:
+    - 3.20
+    - 2.10
+    - 1.52
+    - 1.18
+    - 0.96
+    - 0.78
+    - 0.60
+
+wheels:
+  wheel_radius: 0.33
+  max_braking_force: 10000.0
+
+
+

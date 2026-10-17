@@ -1,0 +1,43 @@
+vehicle:
+  name: "McLaren P1"
+  mass: 1490.0
+  drag: 0.34
+  frontal_area: 1.95
+  rolling_resistance: 0.012
+
+engine:
+  peak_torque: 720.0
+  rpm_limit: 7500.0
+  torque_curve:
+    - rpm: 1500
+      torque: 550.0
+    - rpm: 2500
+      torque: 650.0
+    - rpm: 3500
+      torque: 700.0
+    - rpm: 4000
+      torque: 720.0
+    - rpm: 5000
+      torque: 700.0
+    - rpm: 6000
+      torque: 650.0
+    - rpm: 7000
+      torque: 580.0
+    - rpm: 7500
+      torque: 500.0
+
+transmission:
+  final_drive: 3.20
+  gear_efficiency: 0.92
+  gear_ratios:
+    - 3.15
+    - 2.18
+    - 1.68
+    - 1.29
+    - 1.03
+    - 0.84
+    - 0.69
+
+wheels:
+  wheel_radius: 0.34
+  max_braking_force: 18000.0

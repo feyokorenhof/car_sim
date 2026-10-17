@@ -1,0 +1,42 @@
+vehicle:
+  name: "BMW M5 CS"
+  mass: 1825.0
+  drag: 0.31
+  frontal_area: 2.35
+  rolling_resistance: 0.012
+
+engine:
+  peak_torque: 750.0
+  rpm_limit: 7200.0
+  torque_curve:
+    - rpm: 1800
+      torque: 650.0
+    - rpm: 2000
+      torque: 700.0
+    - rpm: 3000
+      torque: 750.0
+    - rpm: 4500
+      torque: 750.0
+    - rpm: 5500
+      torque: 720.0
+    - rpm: 6500
+      torque: 650.0
+    - rpm: 7200
+      torque: 520.0
+
+transmission:
+  final_drive: 3.15
+  gear_efficiency: 0.90
+  gear_ratios:
+    - 5.00
+    - 3.20
+    - 2.14
+    - 1.72
+    - 1.31
+    - 1.00
+    - 0.82
+    - 0.64
+
+wheels:
+  wheel_radius: 0.35
+  max_braking_force: 16000.0
